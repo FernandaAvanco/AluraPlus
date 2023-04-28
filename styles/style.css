@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor-fundo: #00030C;
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-botao: #167BF7;
+    --fonte-principal: 'Inter', sans-serif;
+    --peso-fonte: 400;
+}
+
+*{
+    margin : 0;
+    padding : 0;
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-fonte);
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 50% 50% ;
+}
+
+.principal{
+    background-image: url("./Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    align-items: center;
+}
+
+.container__conteudo {
+    margin : 0 6rem;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    margin-bottom: 1.375rem;
+    font-weight: 700;
+}
+
+.container__botao {
+    font-size: 1rem;
+    background-color: var(--cor-botao);
+    display: block;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding : 1rem;
+    margin-top: 1rem;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border : 2px solid var(--cor-principal);
+    margin-bottom: 1rem;
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cor-secundaria);
+}
+
+.container__conteudo__secundario {
+    padding : 2rem;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secundario__imagem {
+    width: 75%;
+}
+
+.titulo__secundario {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.container__texto {
+    font-size: 1rem;
+}
+
+.terceiro__botao {
+    display: inline-block;
+}
+
+.container-final {
+    text-align: center;
+}
+
+.container__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.container__lista__item__dispositivos {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.rodape {
+    text-align: center;
+    margin: 10rem 0 7rem 0;
+}
+
+.rodape__lista {
+    gap: 1rem;
+}
+
+.rodape__lista__link {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.rodape__texto {
+    font-size: 0.875rem;
+    margin: 2rem 20rem 0 20rem;
+}
